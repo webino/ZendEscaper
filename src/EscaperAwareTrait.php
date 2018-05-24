@@ -37,9 +37,9 @@ trait EscaperAwareTrait
      * @param string $string
      * @return string
      */
-    public function escapeHtml(string $string) : string
+    public function escapeHtml($string) : string
     {
-        return $this->getEscaper()->escapeHtml($string);
+        return $this->getEscaper()->escapeHtml((string) $string);
     }
 
     /**
@@ -48,9 +48,9 @@ trait EscaperAwareTrait
      * @param string $string
      * @return string
      */
-    public function escapeHtmlAttr(string $string) : string
+    public function escapeHtmlAttr($string) : string
     {
-        return $this->getEscaper()->escapeHtmlAttr($string);
+        return $this->getEscaper()->escapeHtmlAttr((string) $string);
     }
 
     /**
@@ -59,9 +59,9 @@ trait EscaperAwareTrait
      * @param string $string
      * @return string
      */
-    public function escapeUrl(string $string) : string
+    public function escapeUrl($string) : string
     {
-        return $this->getEscaper()->escapeUrl($string);
+        return $this->getEscaper()->escapeUrl((string) $string);
     }
 
     /**
@@ -70,9 +70,9 @@ trait EscaperAwareTrait
      * @param string $string
      * @return string
      */
-    public function escapeCss(string $string) : string
+    public function escapeCss($string) : string
     {
-        return $this->getEscaper()->escapeCss($string);
+        return $this->getEscaper()->escapeCss((string) $string);
     }
 
     /**
@@ -81,8 +81,8 @@ trait EscaperAwareTrait
      * @param string $string
      * @return string
      */
-    public function escapeJs(string $string) : string
+    public function escapeJs($string) : string
     {
-        return $this->getEscaper()->escapeJs($string);
+        return $this->getEscaper()->escapeJs((string) $string);
     }
 }
