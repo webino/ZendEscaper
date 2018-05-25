@@ -16,7 +16,7 @@
         "forum": "https://discourse.zendframework.com/c/questions/components"
     },
     "replace": {
-        "zendframework/zend-escaper": "*"
+        "zendframework/zend-escaper": "self.version"
     },
     "require": {
         "php": ">=7.1"
